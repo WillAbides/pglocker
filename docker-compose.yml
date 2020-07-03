@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  postgres:
+    image: postgres:12.3-alpine
+    environment:
+      POSTGRES_USER: pglocker
+      POSTGRES_PASSWORD: pglocker
+    ports:
+      - 5432
